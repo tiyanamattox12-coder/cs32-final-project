@@ -5,7 +5,8 @@ open_madlib = open(current_madlib)
 
 questions = ['What is the name of your first pet? ', 'What is something that smells weird? ', 'Name your favorite food. ']
 
-noun = []
+# Madlib indication being _n, _v, _a or something of that nature. 
+noun = ['What is the name of your first pet? ']
 verb = []
 adjective = [] 
 
@@ -13,15 +14,14 @@ replace = ''
 updated_madlib = ''
 
 for the_line in open_madlib:
-    i = 0
-    while i < len(the_line):
-        if the_line[i] == '_':
-            replace = input(random.choice(questions))
-            the_line = the_line.split('_', 1)
-            the_line[0] += replace
-            the_line = the_line[0] + the_line[1]
-            updated_madlib += the_line
-
-        i += 1
+    while '_n' in the_line:
+        replace = input(random.choice(noun))
+        the_line = the_line.replace('_n', replace, 1)
+        
+    updated_madlib += the_line
 
 print(updated_madlib)
+
+open_madlib.close()
+
+
