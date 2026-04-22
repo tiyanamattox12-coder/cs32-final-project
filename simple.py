@@ -5,6 +5,10 @@ open_madlib = open(current_madlib)
 
 questions = ['What is the name of your first pet? ', 'What is something that smells weird? ', 'Name your favorite food. ']
 
+noun = []
+verb = []
+adjective = [] 
+
 replace = ''
 updated_madlib = ''
 
