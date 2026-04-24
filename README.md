@@ -13,6 +13,11 @@ Mad Libs are a classic word game that are simple to play but endlessly entertain
 2. It scans the template for blanks and identifies the part of speech needed for each
 3. The user is prompted to enter a word for each blank, without seeing the story
 4. Once all blanks are filled, the completed story is displayed
+# Run it!
+1. In terminal enter python main.py
+2. User will be prompted to input the Madlib text number they would like to run.
+3. User will be prompted to answer questions pertaining to nouns, adjectives, verbs corresponding to the amount for each in the specified Madlib text.
+4. After user enters answers the code will output the finished Madlib.
 # Team Members
 * Tiyana Mattox
 * Anjali
