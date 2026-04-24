@@ -8,7 +8,7 @@ Mad Libs are a classic word game that are simple to play but endlessly entertain
 * A library of story templates with labeled blanks (e.g., [NOUN], [VERB], [ADJECTIVE])
 * A user-friendly interface that prompts players for words one at a time
 * Support for multiple story templates so users can play again with different stories
-# How It Works
+# How main.py Works
 1. The program selects a story template
 2. It scans the template for blanks and identifies the part of speech needed for each
 3. The user is prompted to enter a word for each blank, without seeing the story
@@ -18,6 +18,10 @@ Mad Libs are a classic word game that are simple to play but endlessly entertain
 2. User will be prompted to input the Madlib text number they would like to run.
 3. User will be prompted to answer questions pertaining to nouns, adjectives, verbs corresponding to the amount for each in the specified Madlib text.
 4. After user enters answers the code will output the finished Madlib.
+#  How madlibmaker.py Works
+1. The user is prompted to make their noun, verb, and adjective questions. 
+2. The user is prompted to add lines to their madlib and verifies that it is the line that they want. 
+3. The madlib the user created is printed out. 
 # Team Members
 * Tiyana Mattox
 * Anjali
