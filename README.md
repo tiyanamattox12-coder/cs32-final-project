@@ -27,6 +27,10 @@ Mad Libs are a classic word game that are simple to play but endlessly entertain
 2. The user is prompted to make their noun, verb, and adjective questions. 
 3. The user is prompted to add lines to their madlib and verifies that it is the line that they want. 
 4. The madlib the user created is printed out. 
+5. The user can save their newly created madlib if they chose to.
 # Team Members
 * Tiyana Mattox
 * Anjali
+# Generative AI
+1. Was used to create 20 additional questions for the nouns, verbs, and adjectives. 
+2. Was used to generate the code to save the madlib as a file. 
