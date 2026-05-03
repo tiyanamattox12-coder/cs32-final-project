@@ -47,4 +47,14 @@ while adding_lines == '1':
 
 print(new_madlib)
 
-# Need to work on madlibplayer.py and setting up the server aspect 
+
+# Generative AI was used to help write these lines of code
+save = input('Would you like to save your madlib? 1 for yes, 0 for no. ')
+
+if save == '1':
+    filename = input('Enter a file name (without .txt): ')
+    
+    with open(filename + '.txt', 'w') as file:
+        file.write(new_madlib)
+    
+    print('Your madlib has been saved!')
