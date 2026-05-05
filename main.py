@@ -1,3 +1,4 @@
+##Main.py
 import random
 
 current_madlib = input('Which madlib would you like to do? ')
@@ -65,6 +66,10 @@ adjective = ['Describe your spring semester. ','How do you feel today? ','Descri
     'What is a word to describe a secret hideout? ',
     'What is a word to describe a movie that makes no sense? '] 
 
+#Shuffle questions list
+random.shuffle(noun)
+random.shuffle(verb)
+random.shuffle(adjective)
 replace = ''
 updated_madlib = ''
 
@@ -72,17 +77,20 @@ updated_madlib = ''
 for the_line in open_madlib:
     # Checks for blanks requiring a noun and prompts user. 
     while '_n' in the_line:
-        replace = input(random.choice(noun))
+        question = noun.pop() if noun else 'Enter a noun: ' #pop from question bank or tell them to put a noun
+        replace = input(question) #change to input quesiton
         the_line = the_line.replace('_n', replace, 1)
 
     # Checks for blanks requiring a verb and prompts user. 
     while '_v' in the_line:
-        replace = input(random.choice(verb))
+        question = noun.pop() if noun else 'Enter a noun: '
+        replace = input(question)
         the_line = the_line.replace('_v', replace, 1)
 
     # Checks for blanks requiring an adjective and prompts user. 
     while '_a' in the_line:
-        replace = input(random.choice(adjective))
+        question = adjective.pop() if adjective else 'Enter a adjective: '
+        replace = input(question)
         the_line = the_line.replace('_a', replace, 1)
     
     # Adds line to updated madlib with blanks filled.
