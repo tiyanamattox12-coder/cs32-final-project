@@ -83,7 +83,7 @@ for the_line in open_madlib:
 
     # Checks for blanks requiring a verb and prompts user. 
     while '_v' in the_line:
-        question = noun.pop() if noun else 'Enter a noun: '
+        question = verb.pop() if noun else 'Enter a verb: '
         replace = input(question)
         the_line = the_line.replace('_v', replace, 1)
 
